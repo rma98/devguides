@@ -1,18 +1,6 @@
-import { useState } from "react";
-import { FaCheckCircle } from "react-icons/fa";
 import { Container, Card, Title, Subtitle, Pre } from "./styles/ComandsGuideStyles";
 
 export default function ComandsGuide() {
-    const [selectedOption, setSelectedOption] = useState(null);
-
-    const options = [
-        { id: 1, title: "TypeScript", desc: "Adiciona suporte ao TypeScript, que melhora a segurança do código com tipagem estática." },
-        { id: 2, title: "TypeScript + SWC", desc: "Igual ao TypeScript, mas usa o compilador SWC (mais rápido que Babel) para melhorar a performance do build." },
-        { id: 3, title: "JavaScript", desc: "Usa apenas JavaScript puro, sem TypeScript." },
-        { id: 4, title: "JavaScript + SWC", desc: "Igual ao JavaScript, mas com SWC para compilar mais rápido." },
-        { id: 5, title: "React Router v7", desc: "Configura o projeto já com React Router, que é usado para criar navegação entre páginas." }
-    ];
-
     return (
         <Container>
             <Card>
