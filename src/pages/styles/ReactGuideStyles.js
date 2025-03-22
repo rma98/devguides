@@ -31,6 +31,7 @@ const Subtitle = styled.h2`
   font-size: 1.8rem;
   font-weight: bold;
   margin-top: 24px;
+  margin-bottom: 8px;
 `;
 
 const LinkButton = styled(Link)`
