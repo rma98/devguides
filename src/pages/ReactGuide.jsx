@@ -20,7 +20,7 @@ export default function ReactGuide() {
 
         <Subtitle>🚀 Guia de Instalação do React com Vite</Subtitle>
         <Subtitle>1️⃣ Criando o projeto</Subtitle>
-        
+
         <Pre>npm create vite .</Pre>
 
         <Subtitle>2️⃣ Escolhendo a opção</Subtitle>
@@ -32,6 +32,9 @@ export default function ReactGuide() {
             </OptionItem>
           ))}
         </ul>
+
+        <Subtitle>Se o projeto for um SPA pequeno ou um estudo inicial, não precisa do React Router agora. Você pode adicioná-lo depois com:</Subtitle>
+        <Pre>npm install react-router-dom</Pre>
 
         <Subtitle>🛑 Arquivos a remover</Subtitle>
         <ul>
