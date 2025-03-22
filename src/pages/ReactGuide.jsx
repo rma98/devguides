@@ -18,7 +18,7 @@ export default function ReactGuide() {
       <Card>
         <Title>Bem-vindo ao Meu Site!</Title>
         <p>Escolha uma página para navegar.</p>
-        <div>
+        <div style={{ marginTop: "1.5rem", display: "flex", gap: "1rem" }}>
           <LinkButton to="/">Guia React</LinkButton>
           <LinkButton to="/vueguide">Guia Vue.js</LinkButton>
           <LinkButton to="/about">Sobre Nós</LinkButton>
