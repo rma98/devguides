@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
-import { Container, Card, Title, Subtitle, LinkButton, OptionList, OptionItem, CodeBlock } from "./styles/VueGuideStyles";
+import { Container, Card, Title, Subtitle, OptionList, OptionItem, Pre } from "./styles/VueGuideStyles";
 
 export default function VueGuide() {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -14,11 +14,11 @@ export default function VueGuide() {
     <Container>
       <Card>
         <Title>Bem-vindo ao Meu Site!</Title>
-        
+
         <Subtitle>🚀 Guia de Instalação do Vue.js com Vite</Subtitle>
         <Subtitle>1️⃣ Criando o projeto</Subtitle>
-        
-        <CodeBlock>npm create vite .</CodeBlock>
+
+        <Pre>npm create vite .</Pre>
 
         <Subtitle>2️⃣ Escolhendo a opção</Subtitle>
         <OptionList>
@@ -42,10 +42,10 @@ export default function VueGuide() {
 
         <Subtitle>🚀 Rodando o projeto</Subtitle>
         <p>Agora basta rodar os seguintes comandos para instalar as dependências e iniciar o servidor:</p>
-        <CodeBlock>
+        <Pre>
           npm install{'\n'}
           npm run dev
-        </CodeBlock>
+        </Pre>
       </Card>
     </Container>
   );
