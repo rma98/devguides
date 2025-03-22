@@ -17,15 +17,10 @@ export default function ReactGuide() {
     <Container>
       <Card>
         <Title>Bem-vindo ao Meu Site!</Title>
-        <p>Escolha uma página para navegar.</p>
-        <div style={{ marginTop: "1.5rem", display: "flex", gap: "1rem" }}>
-          <LinkButton to="/">Guia React</LinkButton>
-          <LinkButton to="/vueguide">Guia Vue.js</LinkButton>
-          <LinkButton to="/about">Sobre Nós</LinkButton>
-        </div>
-        <Subtitle>🚀 Guia de Instalação do React com Vite</Subtitle>
 
+        <Subtitle>🚀 Guia de Instalação do React com Vite</Subtitle>
         <Subtitle>1️⃣ Criando o projeto</Subtitle>
+        
         <Pre>npm create vite .</Pre>
 
         <Subtitle>2️⃣ Escolhendo a opção</Subtitle>
