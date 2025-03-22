@@ -22,17 +22,16 @@ const Card = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #63b3ed;
 `;
 
 const Subtitle = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  margin-top: 16px;
+  margin-top: 24px;
   margin-bottom: 8px;
-  color: #63b3ed;
 `;
 
 const LinkButton = styled(Link)`
