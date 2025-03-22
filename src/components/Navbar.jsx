@@ -6,6 +6,7 @@ const Navbar = () => {
         <Nav>
             <NavButton to="/">Guia React</NavButton>
             <NavButton to="/vueguide">Guia Vue.js</NavButton>
+            <NavButton to="/comandsguide">Guia de Comandos</NavButton>
             <NavButton to="/about">Sobre Nós</NavButton>
         </Nav>
     );
