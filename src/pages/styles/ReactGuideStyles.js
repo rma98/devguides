@@ -34,25 +34,9 @@ const Subtitle = styled.h2`
   margin-bottom: 8px;
 `;
 
-const LinkButton = styled(Link)`
-  display: inline-block;
-  padding: 10px 16px;
-  background-color: #4299e1;
-  border-radius: 8px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  color: white;
-  margin-right: 8px;
-  transition: 0.3s;
-
-  &:hover {
-    background-color: #3182ce;
-  }
-`;
-
 const Pre = styled.pre`
   background-color: #4a5568;
-  padding: 12px;
+  padding: 16px;
   border-radius: 8px;
   font-family: monospace;
   color: #68d391;
@@ -77,7 +61,6 @@ const OptionItem = styled.li`
 
 const FileItem = styled.li`
   display: flex;
-  
   gap: 10px;
   background-color: #4a5568;
   padding: 12px;
@@ -85,4 +68,4 @@ const FileItem = styled.li`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 `;
 
-export { Container, Card, Title, Subtitle, LinkButton, Pre, OptionItem, FileItem };
+export { Container, Card, Title, Subtitle, Pre, OptionItem, FileItem };
