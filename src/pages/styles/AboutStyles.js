@@ -29,19 +29,11 @@ const Paragraph = styled.p`
   color: #a0aec0;
 `;
 
-const Button = styled(Link)`
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #4299e1;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  color: white;
-  text-decoration: none;
-  transition: background 0.3s;
-
-  &:hover {
-    background-color: #3182ce;
-  }
+const Subtitle = styled.h2`
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 8px;
 `;
 
-export { Container, Card, Title, Paragraph, Button };
+export { Container, Card, Title, Paragraph, Subtitle };
