@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
-import { Container, Card, Title, Subtitle, LinkButton, Pre, OptionItem, FileItem } from "./styles/ReactGuideStyles";
+import { Container, Card, Title, Subtitle, Pre, OptionItem, FileItem } from "./styles/ReactGuideStyles";
 
 export default function ReactGuide() {
   const [selectedOption, setSelectedOption] = useState(null);
