@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import ReactGuide from "./pages/ReactGuide";
 import VueGuide from "./pages/VueGuide";
 import About from "./pages/About";
@@ -6,6 +7,7 @@ import About from "./pages/About";
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<ReactGuide />} />
         <Route path="/vueguide" element={<VueGuide />} />
