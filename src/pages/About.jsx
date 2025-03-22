@@ -51,7 +51,7 @@ export default function About() {
         <Title>Bem-vindo ao Meu Site!</Title>
         <Paragraph>Escolha uma página para navegar.</Paragraph>
         <div style={{ marginTop: "1.5rem", display: "flex", gap: "1rem" }}>
-          <Button to="/">Home</Button>
+          <Button to="/">Guia React</Button>
           <Button to="/vueguide">Guia Vue.js</Button>
           <Button to="/about">Sobre Nós</Button>
         </div>
