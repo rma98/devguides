@@ -117,7 +117,7 @@ export default function ReactGuide() {
         <Title>Bem-vindo ao Meu Site!</Title>
         <p>Escolha uma página para navegar.</p>
         <div>
-          <LinkButton to="/">Home</LinkButton>
+          <LinkButton to="/">Guia React</LinkButton>
           <LinkButton to="/vueguide">Guia Vue.js</LinkButton>
           <LinkButton to="/about">Sobre Nós</LinkButton>
         </div>
