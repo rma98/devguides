@@ -14,10 +14,37 @@ Este projeto é uma aplicação React desenvolvida com Vite, utilizando HMR (Hot
 O projeto contém um menu fixo que permite navegar entre os guias disponíveis:
 
 - 📘 **Guia React**: Conceitos e práticas essenciais do React.
+- 📱 **Guia React Native**: Passos para instalação e configuração do React Native.
 - 📗 **Guia Vue.js**: Introdução e comparação com React.
 - 🖥 **Guia de Comandos**: Comandos úteis para desenvolvimento.
 - 🔧 **Comandos Git**: Comandos essenciais para versionamento de código.
 - ℹ️ **Sobre Mim**: Informações sobre o desenvolvedor.
+
+## Criando um Projeto com Vite
+Com o comando abaixo, podemos escolher qual tipo de projeto criar, como: Vanilla, Vue, React, Preact, Lit, Svelte, Solid, Qwik, Angular, Others...
+
+```sh
+npm create vite .
+```
+
+## Criando um Projeto React Native
+Como o Vite não suporta React Native, o processo é diferente. Podemos criar um projeto de duas formas:
+
+### 1️⃣ Usando Expo (Recomendado para iniciantes)
+```sh
+npm install -g expo-cli
+npx create-expo-app my-app
+cd my-app
+npm start
+```
+
+### 2️⃣ Usando React Native CLI (Para mais controle)
+```sh
+npx react-native init MyApp
+cd MyApp
+npx react-native run-android # Para rodar no Android
+npx react-native run-ios     # Para rodar no iOS
+```
 
 ## Como Rodar o Projeto
 1. Clone este repositório:
