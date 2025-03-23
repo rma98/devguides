@@ -6,9 +6,12 @@ import ComandsGuide from "./pages/ComandsGuide";
 import ComandsGit from "./pages/ComandsGit";
 import About from "./pages/About";
 
+// Detecta se está rodando no GitHub Pages
+const isGitHubPages = import.meta.env.MODE === "production";
+
 function App() {
   return (
-    <Router basename="/meuprimeiroprojetoreactvite">
+    <Router basename={isGitHubPages ? "/meuprimeiroprojetoreactvite" : "/"}>
       <Navbar />
       <Routes>
         <Route path="/" element={<ReactGuide />} />
