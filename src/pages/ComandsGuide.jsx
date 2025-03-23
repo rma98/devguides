@@ -40,6 +40,19 @@ export default function ComandsGuide() {
 
                 <p>Realizar a comunicação entre servidor e cliente</p>
                 <Pre>npm install axios</Pre>
+
+                <Subtitle>4️⃣ Deploy</Subtitle>
+                <p>Passos comuns ao Vue e React (com Vite) para GitHub Pages</p>
+                <p>Instalar a biblioteca gh-pages</p>
+                <Pre>npm install --save-dev gh-pages</Pre>
+
+                <p>Isso adiciona o gh-pages como dependência de desenvolvimento, permitindo publicar a pasta dist no branch gh-pages.</p>
+                <p>Criar a versão de produção</p>
+                <Pre>npm run build</Pre>
+
+                <p>Isso gera os arquivos na pasta dist.</p>
+                <p>Publicar no GitHub Pages</p>
+                <Pre>npm run deploy</Pre>
             </Card>
         </Container>
     );
