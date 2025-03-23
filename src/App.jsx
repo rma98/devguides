@@ -8,7 +8,7 @@ import About from "./pages/About";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/meuprimeiroprojetoreactvite">
       <Navbar />
       <Routes>
         <Route path="/" element={<ReactGuide />} />
