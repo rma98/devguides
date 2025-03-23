@@ -1,8 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
 
-// https://vite.dev/config/
+// Detecta se está rodando no GitHub Pages ou em outro ambiente
+const isGitHubPages = process.env.NODE_ENV === 'production' && process.env.VERCEL === undefined;
+
 export default defineConfig({
-  base:'/meuprimeiroprojetoreactvite/',
+  base: isGitHubPages ? '/meuprimeiroprojetoreactvite/' : '/',
   plugins: [react()],
-})
+});
