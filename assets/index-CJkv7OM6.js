@@ -64,6 +64,13 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap; /* Permite que os botões quebrem para novas linhas se necessário */
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center; /* Centraliza os botões */
+    gap: 0.5rem;
+  }
 `,su=be(Vf)`
   padding: 0.5rem 1rem;
   background-color: #4299e1;
@@ -71,9 +78,16 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
   text-decoration: none;
   border-radius: 8px;
   transition: background 0.3s;
+  text-align: center;
+  width: auto; /* Garante que os botões não fiquem muito largos */
+  min-width: 120px; /* Evita botões muito pequenos */
 
   &:hover {
     background-color: #3182ce;
+  }
+
+  @media (max-width: 768px) {
+    width: 80%; /* Ocupa 80% da tela para melhor usabilidade */
   }
 `,f1=()=>g.jsxs(r1,{children:[g.jsx(su,{to:"/",children:"Guia React"}),g.jsx(su,{to:"/vueguide",children:"Guia Vue.js"}),g.jsx(su,{to:"/comandsguide",children:"Guia de Comandos"}),g.jsx(su,{to:"/comandsgit",children:"Comandos Git"}),g.jsx(su,{to:"/about",children:"Sobre Nós"})]});var tp={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},sm=Ut.createContext&&Ut.createContext(tp),o1=["attr","size","title"];function s1(u,c){if(u==null)return{};var f=d1(u,c),r,s;if(Object.getOwnPropertySymbols){var h=Object.getOwnPropertySymbols(u);for(s=0;s<h.length;s++)r=h[s],!(c.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(u,r)&&(f[r]=u[r])}return f}function d1(u,c){if(u==null)return{};var f={};for(var r in u)if(Object.prototype.hasOwnProperty.call(u,r)){if(c.indexOf(r)>=0)continue;f[r]=u[r]}return f}function Fi(){return Fi=Object.assign?Object.assign.bind():function(u){for(var c=1;c<arguments.length;c++){var f=arguments[c];for(var r in f)Object.prototype.hasOwnProperty.call(f,r)&&(u[r]=f[r])}return u},Fi.apply(this,arguments)}function dm(u,c){var f=Object.keys(u);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(u);c&&(r=r.filter(function(s){return Object.getOwnPropertyDescriptor(u,s).enumerable})),f.push.apply(f,r)}return f}function Pi(u){for(var c=1;c<arguments.length;c++){var f=arguments[c]!=null?arguments[c]:{};c%2?dm(Object(f),!0).forEach(function(r){h1(u,r,f[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(u,Object.getOwnPropertyDescriptors(f)):dm(Object(f)).forEach(function(r){Object.defineProperty(u,r,Object.getOwnPropertyDescriptor(f,r))})}return u}function h1(u,c,f){return c=m1(c),c in u?Object.defineProperty(u,c,{value:f,enumerable:!0,configurable:!0,writable:!0}):u[c]=f,u}function m1(u){var c=p1(u,"string");return typeof c=="symbol"?c:c+""}function p1(u,c){if(typeof u!="object"||!u)return u;var f=u[Symbol.toPrimitive];if(f!==void 0){var r=f.call(u,c);if(typeof r!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(c==="string"?String:Number)(u)}function lp(u){return u&&u.map((c,f)=>Ut.createElement(c.tag,Pi({key:f},c.attr),lp(c.child)))}function v1(u){return c=>Ut.createElement(g1,Fi({attr:Pi({},u.attr)},c),lp(u.child))}function g1(u){var c=f=>{var{attr:r,size:s,title:h}=u,b=s1(u,o1),A=s||f.size||"1em",v;return f.className&&(v=f.className),u.className&&(v=(v?v+" ":"")+u.className),Ut.createElement("svg",Fi({stroke:"currentColor",fill:"currentColor",strokeWidth:"0"},f.attr,r,b,{className:v,style:Pi(Pi({color:u.color||f.color},f.style),u.style),height:A,width:A,xmlns:"http://www.w3.org/2000/svg"}),h&&Ut.createElement("title",null,h),u.children)};return sm!==void 0?Ut.createElement(sm.Consumer,null,f=>c(f)):c(tp)}function ap(u){return v1({attr:{viewBox:"0 0 512 512"},child:[{tag:"path",attr:{d:"M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"},child:[]}]})(u)}const y1=be.div`
   min-height: 100vh;
