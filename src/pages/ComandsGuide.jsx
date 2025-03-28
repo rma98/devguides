@@ -25,6 +25,9 @@ export default function ComandsGuide() {
                 <p>Instalar React Router</p>
                 <Pre>npm install react-router-dom</Pre>
 
+                <p>Instalar React Player</p>
+                <Pre>npm install react-player</Pre>
+
                 <p>Instalar Styled Components</p>
                 <Pre>npm install styled-components</Pre>
 
