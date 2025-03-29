@@ -1,4 +1,4 @@
-const words = [
+const correctWords = [
     "PARAISO",
     "SANTIDADE",
     "EUCARISTIA",
@@ -11,4 +11,17 @@ const words = [
     "AMOR"
 ];
 
-export default words;
+const wrongWords = [
+    "CARRO",
+    "PEDRA",
+    "LIVRO",
+    "CIDADE",
+    "COMPUTADOR",
+    "FOGÃO",
+    "PRÉDIO",
+    "CADEIRA",
+    "CELULAR",
+    "TV"
+];
+
+export { correctWords, wrongWords };
