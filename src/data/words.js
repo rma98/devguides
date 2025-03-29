@@ -3,12 +3,9 @@ const correctWords = [
     "SANTIDADE",
     "EUCARISTIA",
     "JESUS",
-    "GLORIA",
-    "CELESTE",
-    "FELICIDADE",
+    "MARIA",
+    "AMOR",
     "PAZ",
-    "ESPIRITO",
-    "AMOR"
 ];
 
 const wrongWords = [
@@ -16,12 +13,9 @@ const wrongWords = [
     "PEDRA",
     "LIVRO",
     "CIDADE",
-    "COMPUTADOR",
-    "FOGÃO",
     "PRÉDIO",
     "CADEIRA",
     "CELULAR",
-    "TV"
 ];
 
 export { correctWords, wrongWords };
