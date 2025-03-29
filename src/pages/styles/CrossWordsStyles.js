@@ -9,23 +9,27 @@ export const PageContainer = styled.div`
   background: linear-gradient(180deg, #87ceeb, #ffffff);
   text-align: center;
   padding: 20px;
+  max-width: 100vw;
+  overflow: hidden;
 `;
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(10, 40px);
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
   gap: 5px;
   margin-top: 20px;
+  width: 90%;
+  max-width: 400px;
 `;
 
 export const Cell = styled.div`
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Mantém quadrado */
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #000;
-  font-size: 20px;
+  font-size: clamp(14px, 3vw, 20px);
   cursor: pointer;
   background-color: ${(props) =>
     props.selected ? (props.correct ? "#4CAF50" : "#FF5733") : "#fff"};
@@ -47,8 +51,9 @@ export const VideoContainer = styled.div`
 
   video {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
   }
 `;
 
@@ -58,13 +63,14 @@ export const MessageContainer = styled.div`
   color: white;
   padding: 20px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: clamp(16px, 4vw, 20px);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
+  max-width: 90%;
+  
   h2 {
     margin-bottom: 15px;
   }
