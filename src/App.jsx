@@ -8,8 +8,6 @@ import ComandsGit from "./pages/ComandsGit";
 import About from "./pages/About";
 import CrossWordsPage from "./pages/CrossWordsPage";
 
-const isGitHubPages = import.meta.env.MODE === "production";
-
 function Layout() {
   const location = useLocation(); // Obtém a URL atual
 
@@ -32,7 +30,7 @@ function Layout() {
 
 function App() {
   return (
-    <Router basename={isGitHubPages ? "/meuprimeiroprojetoreactvite" : "/"}>
+    <Router>
       <Layout />
     </Router>
   );
