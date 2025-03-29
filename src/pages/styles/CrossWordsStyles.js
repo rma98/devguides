@@ -1,93 +1,75 @@
 import styled from "styled-components";
 
-export const PageContainer = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(180deg, #87ceeb, #ffffff);
+  background: linear-gradient(to top, #87ceeb, #ffffff);
   text-align: center;
   padding: 20px;
-  max-width: 100vw;
-  overflow: hidden;
 `;
 
-export const GridContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-  gap: 5px;
-  margin-top: 20px;
-  width: 90%;
-  max-width: 400px;
-`;
-
-export const Cell = styled.div`
-  width: 100%;
-  aspect-ratio: 1 / 1; /* Mantém quadrado */
+export const GameContainer = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  border: 1px solid #000;
-  font-size: clamp(14px, 3vw, 20px);
-  cursor: pointer;
-  background-color: ${(props) =>
-    props.selected ? (props.correct ? "#4CAF50" : "#FF5733") : "#fff"};
-  color: ${(props) => (props.selected ? "#fff" : "#000")};
+  gap: 10px;
+`;
+
+export const Title = styled.h1`
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+`;
+
+export const Hint = styled.p`
+  font-size: 18px;
+  color: #34495e;
+  margin-bottom: 15px;
+`;
+
+export const WordBox = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  max-width: 400px;
+  margin-bottom: 15px;
+`;
+
+export const Word = styled.div`
+  padding: 5px 10px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  color: #2c3e50;
   font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
+`;
+
+export const WordInput = styled.input`
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  width: 200px;
+  outline: none;
+  text-transform: uppercase;
 `;
 
 export const VideoContainer = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-
-  video {
-    width: 100%;
-    height: auto;
-    max-height: 100%;
-    object-fit: contain;
-  }
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 `;
 
-export const MessageContainer = styled.div`
-  text-align: center;
-  background: rgba(255, 0, 0, 0.8);
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  font-size: clamp(16px, 4vw, 20px);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+export const Video = styled.video`
   max-width: 90%;
-  
-  h2 {
-    margin-bottom: 15px;
-  }
-
-  button {
-    background: white;
-    color: red;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-
-    &:hover {
-      background: darkred;
-      color: white;
-    }
-  }
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 `;
