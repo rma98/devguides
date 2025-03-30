@@ -68,7 +68,7 @@ O projeto estará disponível em `http://localhost:5173/`.
 
 ## Deploy no GitHub Pages
 O projeto foi configurado para ser hospedado no GitHub Pages. Acesse em:
-🔗 [meuprimeiroprojetoreactvite](https://rma98.github.io/devguides/)
+🔗 [devguides](https://rma98.github.io/devguides/)
 
 ## Contribuição
 Sinta-se à vontade para abrir issues e enviar pull requests para melhorias!
