@@ -9,6 +9,7 @@ const Navbar = () => {
             <NavButton to="/vueguide">Guia Vue.js</NavButton>
             <NavButton to="/comandsguide">Guia de Comandos</NavButton>
             <NavButton to="/comandsgit">Comandos Git</NavButton>
+            <NavButton to="/importantinfor">Vue.js X React X Next.js</NavButton>
             <NavButton to="/about">Sobre Min</NavButton>
         </Nav>
     );
