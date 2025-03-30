@@ -5,6 +5,7 @@ import ReactNativeGuide from "./pages/ReactNativeGuide";
 import VueGuide from "./pages/VueGuide";
 import ComandsGuide from "./pages/ComandsGuide";
 import ComandsGit from "./pages/ComandsGit";
+import ImportantInforPage from "./pages/ImportantInforPage";
 import About from "./pages/About";
 import CrossWordsPage from "./pages/CrossWordsPage";
 
@@ -21,6 +22,7 @@ function Layout() {
         <Route path="/vueguide" element={<VueGuide />} />
         <Route path="/comandsguide" element={<ComandsGuide />} />
         <Route path="/comandsgit" element={<ComandsGit />} />
+        <Route path="/importantinfor" element={<ImportantInforPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/crossWords" element={<CrossWordsPage />} />
       </Routes>
