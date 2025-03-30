@@ -1,4 +1,4 @@
-# Meu Primeiro Projeto React com Vite
+# Guias para desenvolvedores
 
 Este projeto é uma aplicação React desenvolvida com Vite, utilizando HMR (Hot Module Replacement) e algumas regras do ESLint para manter o código limpo e eficiente.
 
@@ -49,11 +49,11 @@ npx react-native run-ios     # Para rodar no iOS
 ## Como Rodar o Projeto
 1. Clone este repositório:
    ```sh
-   git clone https://github.com/rma98/meuprimeiroprojetoreactvite.git
+   git clone https://github.com/rma98/devguides.git
    ```
 2. Acesse a pasta do projeto:
    ```sh
-   cd meuprimeiroprojetoreactvite
+   cd devguides
    ```
 3. Instale as dependências:
    ```sh
@@ -68,7 +68,7 @@ O projeto estará disponível em `http://localhost:5173/`.
 
 ## Deploy no GitHub Pages
 O projeto foi configurado para ser hospedado no GitHub Pages. Acesse em:
-🔗 [meuprimeiroprojetoreactvite](https://rma98.github.io/meuprimeiroprojetoreactvite/)
+🔗 [meuprimeiroprojetoreactvite](https://rma98.github.io/devguides/)
 
 ## Contribuição
 Sinta-se à vontade para abrir issues e enviar pull requests para melhorias!
