@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, GameContainer, Title, Hint, WordBox, Word, WordInput, VideoContainer, Video } from "./styles/CrossWordsStyles";
 import skyVideo from "../assets/video/sky.mp4";
 
-const words = ["AMOR", "PAZ", "EUCARISTIA", "ESPÍRITO SANTO", "MARIA", "JESUS", "SANTIDADE"];
+const words = ["AMOR", "GLÓRIA", "EUCARISTIA", "ESPÍRITO SANTO", "PARAÍSO", "JESUS", "SANTIDADE"];
 const options = [
   ...words,
   "GUERRA", "ÓDIO", "TREVAS", "MEDO", "RAIVA", "INVEJA", "ORGULHO"
