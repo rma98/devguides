@@ -143,6 +143,8 @@ export default function ComandsGuide() {
                 <p>Se você tem um repositório principal chamado Clinica-Medica e deseja adicionar o repositório Clinica-Medica-Web como um submódulo, execute:</p>
                 <Pre>git submodule add{'\n'}https://github.com/fernandasales27/Clinica-Medica-Web.git</Pre>
 
+                <Pre>git add .{'\n'}git commit -m "Adicionando submodule frontend"{'\n'}git push</Pre>
+
                 <p>Isso criará um diretório dentro do repositório principal com o código do Clinica-Medica.</p>
 
                 <Subtitle>📌 Clonando um Repositório com Submódulos</Subtitle>
@@ -162,10 +164,10 @@ export default function ComandsGuide() {
                 <Pre>git config -f .gitmodules --remove-section submodule.Clinica-Medica-Web</Pre>
 
                 <p>Remova a referência no Git</p>
-                <Pre>git rm --cached backend</Pre>
+                <Pre>git rm --cached Clinica-Medica-Web</Pre>
 
                 <p>Remova a pasta do submódulo</p>
-                <Pre>rm -rf backend</Pre>
+                <Pre>rm -rf Clinica-Medica-Web</Pre>
 
                 <p>Confirme e envie a remoção</p>
                 <Pre>git commit -m "Removido submódulo frontend"{'\n'}git push origin main</Pre>
