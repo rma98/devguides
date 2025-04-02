@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { FaCheckCircle } from "react-icons/fa";
 import { Container, Card, Title, Subtitle, Pre, OptionItem } from "./styles/ReactNativeGuideStyles";
 
 export default function ReactNativeGuide() {
