@@ -39,7 +39,8 @@ export default function ComandsGuide() {
                 <Pre>npm install vuex</Pre>
 
                 <p>Instalar biblioteca Fontawesome</p>
-                <Pre>npm install @fortawesome/vue-fontawesome {'\n'}@fortawesome/free-solid-svg-icons {'\n'}@fortawesome/fontawesome-svg-core</Pre>
+                <Pre>npm install @fortawesome/vue-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core @fortawesome/fontawesome-free
+                </Pre>
 
                 <p>Realizar a comunicação entre servidor e cliente</p>
                 <Pre>npm install axios</Pre>
