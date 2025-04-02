@@ -2,6 +2,7 @@ import { HashRouter as Router, Routes, Route, useLocation } from "react-router-d
 import Navbar from "./components/Navbar";
 import ReactGuide from "./pages/ReactGuide";
 import ReactNativeGuide from "./pages/ReactNativeGuide";
+import NextjsGuide from "./pages/NextjsGuide";
 import VueGuide from "./pages/VueGuide";
 import ComandsGuide from "./pages/ComandsGuide";
 import ComandsGit from "./pages/ComandsGit";
@@ -19,6 +20,7 @@ function Layout() {
       <Routes>
         <Route path="/" element={<ReactGuide />} />
         <Route path="/reactnativeguide" element={<ReactNativeGuide />} />
+        <Route path="/nextjsguide" element={<NextjsGuide />} />
         <Route path="/vueguide" element={<VueGuide />} />
         <Route path="/comandsguide" element={<ComandsGuide />} />
         <Route path="/comandsgit" element={<ComandsGit />} />
