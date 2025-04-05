@@ -1,5 +1,17 @@
 import React, { useState } from "react";
-import { Container, GameContainer, Title, Hint, WordBox, Word, WordInput, VideoContainer, Video } from "./styles/CrossWordsStyles";
+import { FaInstagram } from "react-icons/fa"; // Importa o ícone
+import {
+  Container,
+  GameContainer,
+  Title,
+  Hint,
+  WordBox,
+  Word,
+  WordInput,
+  VideoContainer,
+  Video,
+  InstagramAction
+} from "./styles/CrossWordsStyles";
 import skyVideo from "../assets/video/sky.mp4";
 
 const words = ["AMOR", "GLÓRIA", "EUCARISTIA", "ESPÍRITO SANTO", "PARAÍSO", "JESUS", "SANTIDADE"];
@@ -20,7 +32,7 @@ const CrossWordsPage = () => {
     const newWords = [...userWords];
     newWords[index] = value.toUpperCase();
     setUserWords(newWords);
-    
+
     if (words.every(word => newWords.some(input => normalizeText(input) === word))) {
       setIsComplete(true);
     }
@@ -53,9 +65,19 @@ const CrossWordsPage = () => {
           ))}
         </GameContainer>
       ) : (
-        <VideoContainer>
-          <Video src={skyVideo} autoPlay controls onEnded={restartGame} />
-        </VideoContainer>
+        <>
+          <VideoContainer>
+            <Video src={skyVideo} autoPlay controls onEnded={restartGame} />
+          </VideoContainer>
+          <InstagramAction
+            href="https://www.instagram.com/goj_saofrancisco?igsh=dGppYWRrbGxvMTU3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram size={24} />
+            <span>@goj_saofrancisco</span>
+          </InstagramAction>
+        </>
       )}
     </Container>
   );
