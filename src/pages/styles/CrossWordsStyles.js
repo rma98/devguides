@@ -73,3 +73,20 @@ export const Video = styled.video`
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 `;
+
+export const InstagramAction = styled.a`
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #e1306c;
+  font-weight: bold;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+  }
+`;
