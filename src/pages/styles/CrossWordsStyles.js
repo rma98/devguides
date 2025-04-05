@@ -66,10 +66,14 @@ export const VideoContainer = styled.div`
   align-items: center;
   height: 100vh;
   width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 `;
 
 export const Video = styled.video`
-  max-width: 90%;
+  width: 100%;
+  max-width: 800px; /* Novo limite para telas grandes */
+  max-height: 80vh;  /* Para evitar ocupar a tela toda em altura */
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 `;
