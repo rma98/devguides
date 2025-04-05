@@ -9,14 +9,15 @@ import ComandsGit from "./pages/ComandsGit";
 import ImportantInforPage from "./pages/ImportantInforPage";
 import About from "./pages/About";
 import CrossWordsPage from "./pages/CrossWordsPage";
+import PortalRobson from "./pages/PortalRobson";
 
 function Layout() {
   const location = useLocation(); // Obtém a URL atual
+  const hiddenNavbarRoutes = ["/crossWords", "/portalRobson"];
 
   return (
     <>
-      {/* Exibe a Navbar apenas se não estiver na página CrossWordsPage */}
-      {location.pathname !== "/crossWords" && <Navbar />}
+      {!hiddenNavbarRoutes.includes(location.pathname) && <Navbar />}
       <Routes>
         <Route path="/" element={<ReactGuide />} />
         <Route path="/reactnativeguide" element={<ReactNativeGuide />} />
@@ -27,6 +28,7 @@ function Layout() {
         <Route path="/importantinfor" element={<ImportantInforPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/crossWords" element={<CrossWordsPage />} />
+        <Route path="/portalRobson" element={<PortalRobson />} />
       </Routes>
     </>
   );
