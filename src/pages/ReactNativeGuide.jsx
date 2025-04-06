@@ -48,25 +48,12 @@ export default function ReactNativeGuide() {
 
         <Subtitle>Usando React Native CLI (Mais Flexível)</Subtitle>
         <p>Se você quer mais controle sobre o projeto, pode usar a CLI oficial do React Native. Esse método exige mais configurações, mas permite acessar recursos nativos do Android/iOS.</p>
-        <p>Passos para criar um projeto com React Native CLI:</p>
-        <p>Instale as dependências:</p>
-        <p>No Windows:</p>
-        <Pre>choco install -y nodejs python2{'\n'}npm install -g yarn</Pre>
+        <p>Criando o projeto:</p>
 
-        <p>No macOS:</p>
-        <Pre>brew install node{'\n'}npm install -g yarn</Pre>
+        <Pre>npx create-expo-app@latest</Pre>
 
-        <p>Instale a CLI do React Native:</p>
-        <Pre>npx react-native init MyApp</Pre>
-
-        <p>Entre no projeto:</p>
-        <Pre>cd MyApp</Pre>
-
-        <p>Rode o app no emulador Android:</p>
-        <Pre>npx react-native run-android</Pre>
-
-        <p>Ou no iOS:</p>
-        <Pre>npx react-native run-ios</Pre>
+        <p>Rode o app:</p>
+        <Pre>npx expo start</Pre>
 
         <Subtitle>✅ Vantagens da React Native CLI:</Subtitle>
         <p>✔️ Total controle sobre o código nativo (Android e iOS).</p>
